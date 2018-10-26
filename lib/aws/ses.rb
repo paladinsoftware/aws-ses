@@ -13,16 +13,16 @@ rescue Exception => e
 end
 
 $:.unshift(File.dirname(__FILE__))
-require 'ses/extensions'
+require_relative 'ses/extensions'
 
-require 'ses/response'
-require 'ses/send_email'
-require 'ses/info'
-require 'ses/base'
-require 'ses/version'
-require 'ses/addresses'
-require 'ses/identity'
-require 'ses/notifications'
+require_relative 'ses/response'
+require_relative 'ses/send_email'
+require_relative 'ses/info'
+require_relative 'ses/base'
+require_relative 'ses/version'
+require_relative 'ses/addresses'
+require_relative 'sses/identity'
+require_relative 'ses/notifications'
 
 if defined?(Rails)
   major, minor = Rails.version.to_s.split('.')
