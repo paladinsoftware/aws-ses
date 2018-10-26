@@ -21,7 +21,7 @@ require_relative 'ses/info'
 require_relative 'ses/base'
 require_relative 'ses/version'
 require_relative 'ses/addresses'
-require_relative 'sses/identity'
+require_relative 'ses/identity'
 require_relative 'ses/notifications'
 
 if defined?(Rails)
